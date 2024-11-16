@@ -23,8 +23,27 @@ async function getData() {
 };
 
 export default async function Home() {
-  const blogs = await getData();
-
+  // const blogs = await getData();
+  const blogs = [
+    {
+      cover_image:'/readme/11.png',
+      title:'Scriber',
+      description:'Skills: React, Next.js, Typescript, GraphQL, Webiny',
+      url:'https://tellimer.com/'
+    },
+    {
+      cover_image:'/readme/22.png',
+      title:'Anatha',
+      description:'Skills: React, Redux, Eletron, Typescript, Integrating Anatha blockchain into frontend',
+      url:'https://anatha.io/'
+    },
+    {
+      cover_image:'/readme/44.png',
+      title:'NextThink',
+      description:'Skills: Angular, Java , Spring Boot',
+      url:'https://nexthink.com/'
+    }
+  ]
   return (
     <>
       <HeroSection />
